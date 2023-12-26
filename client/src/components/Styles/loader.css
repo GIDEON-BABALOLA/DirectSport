@@ -1,0 +1,36 @@
+.Dstyle{
+    font-family : "Ethnocentric Rg", sans-serif;
+    padding-top: 4%;
+    padding-left: 4%;
+    
+  }
+  .Sstyle{
+    color: white;
+    background-color: #100034;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    padding-left: 30%;
+    padding-right: 30%;
+  
+  }
+  .loader-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 5px;
+  }
+  .liverpool{
+    animation-name: liverpool;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-delay: -1s;
+    animation-direction: alternate-reverse;
+}
+@keyframes liverpool{
+    from{transform: scale(0.6);}
+    to{transform: scale(1.3);}
+
+}

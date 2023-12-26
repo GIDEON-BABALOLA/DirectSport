@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Noto+Serif+Vithkuqi:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chonburi&display=swap");
+
+.homeEx {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.homeEx-title {
+  padding: 1%;
+}
+
+.DirectSport-Class {
+  font-size: 1.3rem;
+}
+
+.DirectSport-header {
+  font-weight: 900;
+}
+
+.contentMan {
+  padding: 8% 6%;
+}
+
+.intro-to-directsport {
+  background-color: #100034;
+  color: white;
+  width: 100%;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #451952 #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 13px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #451952;
+  border-radius: 10px;
+  border: 3px solid #ffffff;
+}
+
+.accordion {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 400px;
+  gap: 16px;
+  transition: 0.3s;
+}
+
+.accordion:hover {
+  gap: 0;
+}
+
+.accordion li {
+  position: relative;
+  overflow: hidden;
+  flex: 0 0 80px;
+  border-radius: 50px;
+  opacity: 0.75;
+  cursor: pointer;
+}
+
+.accordion li img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(0.5);
+}
+
+.accordion li,
+.accordion li img,
+.accordion li .content,
+.accordion li .content span {
+  transition: 0.3s;
+}
+
+.accordion h2 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 45px;
+  border-bottom: 2px solid #fff;
+  margin-bottom: 10px;
+  white-space: nowrap;
+}
+
+.accordion li .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  color: #fff;
+  padding: 15px;
+  background: #02022e;
+  background: linear-gradient(
+    0deg,
+    rgb(0 0 0 / 70%) 10%,
+    rgb(255 255 255 / 0%) 100%
+  );
+  opacity: 0;
+  visibility: hidden;
+}
+.slide-up {
+  animation: slideUp 1s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.accordion li .content span {
+  position: absolute;
+  z-index: 3;
+  left: 50%;
+  bottom: 50px;
+  transform: translate(-300px, 0);
+  visibility: hidden;
+  opacity: 0;
+}
+
+.accordion li:hover {
+  flex: 0 1 260px;
+  transform: scale(1.1);
+  z-index: 10;
+  opacity: 1;
+}
+
+.accordion li:hover .content {
+  opacity: 1;
+  visibility: visible;
+}
+
+.accordion li:hover span {
+  transform: translate(-50%, 0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.startbutton {
+  display: inline-block;
+  text-decoration: none;
+  color: #120817;
+  background-color: #612a79;
+  border-radius: 0.25rem;
+}
+
+.startbutton:hover span {
+  background-color: #c9a3d9;
+}
+
+.startbutton:active span {
+  translate: none;
+}
+
+.startbutton span {
+  display: inherit;
+  border-radius: inherit;
+  background-color: #d6b4e4;
+  padding: 1rem 2rem;
+  translate: 0.25rem -0.25rem;
+  border: 2px solid #612a79;
+  transition: translate 100ms cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    background-color 250ms;
+}

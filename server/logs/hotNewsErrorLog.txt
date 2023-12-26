@@ -1,0 +1,7 @@
+2023 12 20	22:28:05	1b560b3a-f1ba-4021-89c5-f6a8345d6c5a	ValidationError : hotnews validation failed: id: Cast to Number failed for value "089bb3ac-3a98-401b-b9eb-d87aa1c56bb7" (type string) at path "id"
+2023 12 20	22:30:51	4c053c8d-28fa-46c4-afb7-780bff44b3fe	ValidationError : hotnews validation failed: id: Cast to Number failed for value "7f497c1f-946e-4719-9412-11dada30521d" (type string) at path "id"
+2023 12 20	22:30:57	bdd3a0b9-c560-40e4-bc01-632e5f35bb70	ValidationError : hotnews validation failed: id: Cast to Number failed for value "c8c1a339-4c0c-4185-a92e-060dac282666" (type string) at path "id"
+2023 12 20	22:31:41	a912a7af-4eb3-4891-bfcf-ca23a7965f17	ValidationError : hotnews validation failed: id: Cast to Number failed for value "570197b8-56f0-45ac-a5cf-30f5584cb70e" (type string) at path "id"
+2023 12 20	22:32:22	d08210ad-35c5-4d17-be40-4d42fdc61719	ValidationError : hotnews validation failed: id: Cast to Number failed for value "d54d9c98-95a1-4b88-82d9-6cca814ae0c5" (type string) at path "id"
+2023 12 20	22:33:10	0cfe4def-3f7a-4b40-9a94-442be24052a3	ValidationError : hotnews validation failed: id: Cast to Number failed for value "9df3ad3a-37a8-4d6b-9e49-5cd6b803226b" (type string) at path "id"
+2023 12 20	22:34:09	a77534fb-b2dc-4a5f-aa23-626d457be9df	ValidationError : hotnews validation failed: id: Cast to Number failed for value "c28e7919-4407-457b-924d-c4902b433674" (type string) at path "id"

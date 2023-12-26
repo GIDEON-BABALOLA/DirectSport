@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap");
+.containerClass{
+  text-align: center;
+  width: 550px;
+  height: auto;
+  padding: 90px 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  margin: 0 auto;
+}
+
+h4{
+  font-size: 20px;
+  color: #121212;
+}
+
+.form{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.input_field_box{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.input_field_box .otpInput{
+  border: none;
+  max-width: 20%;
+  height: 110px;
+  text-align: center;
+  border-radius: 10px;
+  background: #f0f0f0;
+  font-size: 25px;
+}
+
+.input_field_box .otpInput::-webkit-inner-spin-button,
+.input_field_box .otpInput::-webkit-outer-spin-button {
+  display: none;
+}
+
+.input_field_box .otpInput:focus{
+  outline: 1.5px solid #100034;
+  outline-offset: 2px;
+}
+
+.buttonMan {
+  margin-top: 25px;
+  width: 92%;
+  color: white;
+  font-size: 16px;
+  padding: 20px 0;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  background: #b3899c;
+  transition: all 0.2s ease;
+}
+.buttonMan.active {
+  background: #ae0a53;
+  color: white;
+}
+@media (max-width: 767px){
+  .containerClass{
+    width: 300px;
+    padding: 50px 10px;
+  }
+  .input_field_box .otpInput{
+    height: 60px;
+  }
+}

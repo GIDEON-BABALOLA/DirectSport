@@ -1,0 +1,36 @@
+{
+  "name": "directsport",
+  "version": "1.0.0",
+  "description": "Web Application For Sports",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "author": "Toluwase-Babalola, Yinka, Tobi, Gideon-Babalola",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.2",
+    "bcrypt": "^5.1.1",
+    "cheerio": "^1.0.0-rc.12",
+    "cloudinary": "^1.41.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "date-fns": "^2.30.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-fileupload": "^1.4.1",
+    "image-to-base64": "^2.2.0",
+    "inquirer": "^8.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^7.6.4",
+    "qr-image": "^3.2.0",
+    "sharp": "^0.33.0",
+    "socket.io": "^4.7.2",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
