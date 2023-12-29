@@ -60,11 +60,12 @@
 .open .accordion__number {
   color: #100034;
 }
-.question-faq{
-  font-size: 3rem;
-}
+
 .open .accordion__details {
   height: auto;
+}
+.question-faq{
+  font-size: 3rem;
 }
 .accordion-title-faq{
   text-align: center;
@@ -76,8 +77,9 @@
   transform: translateY(100px);
   transition: transform 1s, opacity 1s;
 }
-.accordion__container{
-  transition-delay: calc(var(--index) * 300ms);
+
+.accordion__container .accordion__item, .accordion__container .accordion-title-faq{
+  transition-delay: calc(var(--index) * 400ms);
 }
 .accordion__container.animate{
 visibility: visible;

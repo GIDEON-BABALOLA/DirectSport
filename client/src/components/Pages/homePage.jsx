@@ -6,6 +6,7 @@ import Header from "../Common/Header"
 import Loader from "../Common/loader"
 import HotNews from "../Home/hotNews"
 import Faq from "../Common/faq"
+import Map from "../Home/map"
 import "../Styles/special.css"
 function HomePage(){
     const [loading, setLoading] = useState(true);
@@ -31,6 +32,9 @@ return <div>
 <CompetitionSlider />
 <div style={{marginBottom : "2%"}}>
 <Faq />
+</div>
+<div>
+<Map />
 </div>
 <Footer />
 </div>

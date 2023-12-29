@@ -50,23 +50,21 @@ function Faq(){
   };
     useEffect(() => {
     const options = {
-      rootMargin : "0px 0px 700px 0px",
-      threshold : 1
+      rootMargin : "0px",
+      threshold : 0.5
     }
-    const observer = new IntersectionObserver(([entry]) => {
-      setIsIntersecting(entry.isIntersecting);
-    }, options);
-    console.log(isIntersecting)
+    const entry =  ([entry]) => {
+        setIsIntersecting(entry.isIntersecting);
+
+      
+    }
+    const observer = new IntersectionObserver(entry, options);
     observer.observe(accordionContainer.current);
-    return () => {
-      // Disconnect the observer when the component is unmounted
-      observer.disconnect();
-    };
   }, [isIntersecting]); 
 return <div className="accorder">
-<div className={`accordion__container ${isIntersecting ? "animate" : ""}`} ref={accordionContainer}>
-<h2 className="accordion-title-faq">Frequently Asked Questions <i class="fa-solid fa-question question-faq"></i></h2>
-   <div className={`accordion__item  ${openAccordion === 0 ? "open" : ""} `} ref={(el) => (accordionRefs.current[0] = el)}> 
+<div className={`accordion__container ${isIntersecting ? "animate" : ""}`} ref={accordionContainer} id="Gideon">
+<h2 className="accordion-title-faq ">Frequently Asked Questions <i class="fa-solid fa-question question-faq"></i></h2>
+   <div className={`accordion__item  ${openAccordion === 0 ? "open" : ""} `} style={{"--index" : 1}} ref={(el) => (accordionRefs.current[0] = el)}> 
       <div className="accordion__header"     onClick={() => handleAccordionClick(0)}>
       <p className="accordion__number">01</p>
             <p className="accordion__name">Do We Cover Champions League</p>
@@ -88,7 +86,7 @@ return <div className="accorder">
             </ul>
       </div>
       </div>
-   <div className={`accordion__item  ${openAccordion === 1 ? "open" : ""} `} ref={(el) => (accordionRefs.current[1] = el)}>
+   <div className={`accordion__item  ${openAccordion === 1 ? "open" : ""} `} style={{"--index" : 2}}  ref={(el) => (accordionRefs.current[1] = el)}>
       <div className="accordion__header"     onClick={() => handleAccordionClick(1)}>
       <p className="accordion__number">02</p>
             <p className="accordion__name">Do We Cover Premier League</p>
@@ -110,7 +108,7 @@ return <div className="accorder">
             </ul>
       </div>
    </div>
-   <div className={`accordion__item  ${openAccordion === 2 ? "open" : ""}` } ref={(el) => (accordionRefs.current[2] = el)}> 
+   <div className={`accordion__item   ${openAccordion === 2 ? "open" : ""}` } style={{"--index" : 3}}  ref={(el) => (accordionRefs.current[2] = el)}> 
       <div className="accordion__header"     onClick={() => handleAccordionClick(2)}>
       <p className="accordion__number">03</p>
             <p className="accordion__name">Do We Cover World Cup Also</p>

@@ -22,6 +22,21 @@ border-radius: 1%;
     transform: translateX(0);
   }
 }
+.slide-right {
+  animation: slideRight 0.5s ease-out;
+  opacity: 1; /* Start with opacity 1 */
+}
+
+@keyframes slideRight {
+  from {
+    opacity: 0; /* Start with opacity 0 */
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1; /* End with opacity 1 */
+    transform: translateX(0);
+  }
+}
 .hot-news-title{
     display: flex;
     flex-direction: row;

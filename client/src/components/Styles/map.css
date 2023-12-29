@@ -1,0 +1,27 @@
+.goSmile{
+    transform: scale(0.2);
+}
+.first-map-section{
+    padding: 4%;
+    font-family: "saira";
+    font-weight: 400;
+
+}
+.map-boss{
+margin-top: 2%;
+margin-bottom: 2%;
+}
+.map-boss div:first-child {
+  transform: translateX(-150%);
+  opacity: 0;
+  Transition: all ease-in 1s;
+}
+.map-boss div:last-child {
+  transform: translateX(150%);
+  opacity: 0;
+  Transition: all ease-in 1s;
+}
+.slide-in {
+  transform: translateX(0) !important;
+  opacity: 1 !important;
+}

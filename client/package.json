@@ -5,6 +5,7 @@
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.15.2",
     "@mui/material": "^5.14.16",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -12,6 +13,7 @@
     "axios": "^1.6.0",
     "classnames": "^2.3.2",
     "gsap": "^3.12.4",
+    "hamburger-react": "^2.5.0",
     "i18next": "^23.7.8",
     "normalize.css": "^8.0.1",
     "react": "^18.2.0",

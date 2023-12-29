@@ -2,11 +2,16 @@
 import { React, useState } from "react"
 import "../Styles/header.css"
 import Headroom from "react-headroom"
+import Hamburger from 'hamburger-react'
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import PersonIcon from '@mui/icons-material/Person';
 function Header(){
+  const [isOpen, setOpen] = useState(false)
   const [menu, setMenu] = useState(false)
   const menuSelector = ()=> {
     setMenu(!menu)
   }
+  
   const login = true
   const currentYear = new Date().getFullYear()
 return <div>
@@ -18,9 +23,9 @@ return <div>
 
 
     
-    <div className={`burger navbar-toggler ${menu ? "clicked": ""}`} 
+    <div className={`navbar-toggler ${menu ? "clicked": ""}`} 
     onClick={menuSelector}  data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-  <span className="melat"></span>
+<Hamburger toggled={isOpen} toggle={setOpen} />
 </div>
     <div className={`collapse navbar-collapse ${menu ? "show" : ""}`} id="navbarNav">
 <ul className="header-list">
@@ -57,8 +62,9 @@ return <div>
         </li>
 
         <li  className=" header-list-awesome" ><i className="fa-solid fa-magnifying-glass " ></i></li>
-        <li  className="header-list-awesome"><i className={` ${login ? "fa-solid" : "fa-regular"} fa-user header-list-awesome `}></i></li>
 
+       <li  className="header-list-awesome">{login ? <AccountCircleIcon style={{color : 'black'}}/>: <PersonIcon /> }</li> 
+ 
 
         
         <div className="underline"></div>
