@@ -1,27 +1,18 @@
-.goSmile{
-    transform: scale(0.2);
-}
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,500;0,600;1,200;1,400&family=Montserrat:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Oxygen:wght@300;700&family=Poppins:wght@800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,500;0,600;1,200;1,400&family=Lato:wght@900&family=Montserrat:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Oxygen:wght@300;700&family=Poppins:wght@800;900&display=swap');
 .first-map-section{
     padding: 4%;
-    font-family: "saira";
-    font-weight: 400;
+
+  
 
 }
-.map-boss{
-margin-top: 2%;
-margin-bottom: 2%;
+.first-map-section-container{
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+      font-weight: 1000;
+      font-size: 2rem;
 }
-.map-boss div:first-child {
-  transform: translateX(-150%);
-  opacity: 0;
-  Transition: all ease-in 1s;
-}
-.map-boss div:last-child {
-  transform: translateX(150%);
-  opacity: 0;
-  Transition: all ease-in 1s;
-}
-.slide-in {
-  transform: translateX(0) !important;
-  opacity: 1 !important;
+.comment-man{
+  font-family: "saira";
+  color:  #aa076b;
 }
