@@ -1,18 +1,105 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,500;0,600;1,200;1,400&family=Montserrat:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Oxygen:wght@300;700&family=Poppins:wght@800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,500;0,600;1,200;1,400&family=Lato:wght@900&family=Montserrat:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Oxygen:wght@300;700&family=Poppins:wght@800;900&display=swap');
-.first-map-section{
-    padding: 4%;
+.map-title{
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
 
-  
-
+  flex-wrap: wrap;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  color: #451952;
 }
-.first-map-section-container{
-  font-family: 'Montserrat', sans-serif;
-  font-style: normal;
-      font-weight: 1000;
-      font-size: 2rem;
+.all-around{
+  color: #b6aad2;
+}
+.worldMap{
+  padding: 3%;
+padding-left: 8%;
+padding-right: 8%;
 }
 .comment-man{
   font-family: "saira";
   color:  #aa076b;
+}
+.pulsating-circle {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 15px;
+  height: 15px;
+  z-index: 1;
+  
+  &:before {
+    content: '';
+    position: relative;
+    display: block;
+    width: 300%;
+    height: 300%;
+    box-sizing: border-box;
+    margin-left: -100%;
+    margin-top: -100%;
+    border-radius: 45px;
+    background-color: #01a4e9;
+    animation: pulse-ring 1.25s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+  }
+  
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0; 
+    top: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 8px rgba(0,0,0,.3);
+    animation: pulse-dot 1.25s cubic-bezier(0.455, 0.03, 0.515, 0.955) -.4s infinite;
+  }
+}
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(.33);
+  }
+  80%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes pulse-dot {
+  0% {
+    transform: scale(.2);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(.8);
+  }
+}
+@keyframes flash {
+  0% { opacity: 0; transform: scale(0); }
+  50% { opacity: 1; transform: scale(1); }
+  100% { opacity: 0; transform: scale(0); }
+
+}
+
+.flashing-word {
+
+  position: relative;
+  z-index: 1;
+  animation: flash 2s cubic-bezier(0.4, 0, 0.2, 1) infinite; 
+  top: 15px;
+  left : 20px;
+  color: #01a4e9;
+  font-size: 0.9rem;
+}
+@media (max-width: 767px){
+  .map-title{
+    font-size: 1rem;
+  }
 }

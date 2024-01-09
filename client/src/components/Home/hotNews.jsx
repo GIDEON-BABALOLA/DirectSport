@@ -238,7 +238,7 @@ const renderNews = (newsArray, currentPage, sport)=>{
 }
 return <div className="hotnewsbackground" ref={swipeContentRef}   onTouchStart={handleTouchStart}
 onTouchEnd={handleTouchEnd}    data-sport={foothball ? "foothball" : baskethball ? "baskethball" : boxing ? "boxing" : tennis ? "tennis" : cricket  ? "cricket" : womensfoothball ? "womensfoothball" : ""}>
-
+<h2 className="hotnews-up">!HotNews</h2>
 <div className="hot-news-title" >
 <h4 onClick={() => {setSportState("foothball"); setCurrentValue(1);}}>Foothball</h4>
 <h4 onClick={() => {setSportState("baskethball"); setCurrentValue(1);}}>Baskethball</h4>

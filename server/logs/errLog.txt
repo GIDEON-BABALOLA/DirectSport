@@ -869,3 +869,14 @@
 2023 12 29	21:12:39	b5be708d-6f1f-4dce-bd0f-73abbcd9665f	Error : getaddrinfo ENOTFOUND api.cloudinary.com
 2023 12 29	21:13:59	43a72b70-e284-4c41-80b2-cb649ae18654	Error : getaddrinfo ENOTFOUND api.cloudinary.com
 2023 12 29	21:13:59	4ba31405-bb93-42a0-b3f3-52b24cb61208	Error : getaddrinfo ENOTFOUND api.cloudinary.com
+2024 01 08	15:38:56	6e84c5d7-8d73-4e9c-9ecc-82ba9f58d86c	Error : getaddrinfo ENOTFOUND api.cloudinary.com
+2024 01 08	15:38:56	613aa2db-b725-495e-8eaa-17273b274c66	Error : getaddrinfo ENOTFOUND api.cloudinary.com
+2024 01 08	15:42:30	e375193e-9169-4055-8b4d-b44d1e022a0a	Error : connect ETIMEDOUT 34.200.85.232:443
+2024 01 08	15:42:43	750620b1-1968-447c-b72e-a41ae94abb48	Error : connect ETIMEDOUT 34.200.85.232:443
+2024 01 08	15:42:49	7f1eff70-7608-4b3b-841b-ef1831c25fda	Error : connect ETIMEDOUT 34.200.85.232:443
+2024 01 08	15:42:49	cdd1519e-2660-4746-ba1e-c037fb451895	Error : connect ETIMEDOUT 34.200.85.232:443
+2024 01 08	15:48:02	6fede8dc-c755-4c3a-8a24-aac5ef4b1bbd	Error : getaddrinfo ENOTFOUND api.cloudinary.com
+2024 01 08	15:48:14	a66758be-191f-4303-ad41-4f46307869a7	Error : getaddrinfo ENOTFOUND api.cloudinary.com
+2024 01 08	16:26:58	8466896f-e779-4740-974f-ff85d155043c	Error : connect ETIMEDOUT 174.129.217.25:443
+2024 01 08	16:26:58	d1798de9-5386-4dc3-951b-1653fe4c00f7	Error : connect ETIMEDOUT 174.129.217.25:443
+2024 01 08	16:27:01	9b8fdc25-53a5-4d86-b797-0c9257b32426	Error : connect ETIMEDOUT 174.129.217.25:443

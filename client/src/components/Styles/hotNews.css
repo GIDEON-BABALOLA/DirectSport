@@ -225,6 +225,12 @@ margin-left: 20px;
 .newsBotton i{
 margin: 0 4px;
 }
+.hotnews-up{
+  text-align: center;
+  font-style: italic;
+  font-family: poppins;
+  color: #aa076b;
+}
 @media (max-width: 767px) {
   .hot-news-title{
 flex-wrap: wrap;

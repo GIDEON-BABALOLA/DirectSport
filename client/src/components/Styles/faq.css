@@ -3,6 +3,7 @@
   flex-direction: column;
   gap: 1rem;
   margin-top: 25px;
+
 }
 .accordion__item {
   display: flex;
@@ -15,6 +16,7 @@
   min-height: 70vh;
   display: flex;
   justify-content: center;
+  background-color: #F2F6FF;
 }
 .accordion__header {
   display: flex;
