@@ -26,13 +26,10 @@ return <div>
 <div style={{backgroundColor : "#100034", marginTop : "2%"}}>
 <Intro />
 </div>
-<div>
 <HotNews />
-</div>
 <CompetitionSlider />
-<div style={{marginBottom : "2%"}}>
 <Faq />
-</div>
+
 <div>
 <Map />
 </div>

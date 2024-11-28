@@ -1,7 +1,9 @@
 import React, {useEffect, useState, useRef} from "react"
 import "../Styles/hotNews.css"
 import axios from "axios";
+import { useMediaQuery } from 'react-responsive';
 function HotNews(){
+  // const Mobile = useMediaQuery({ maxWidth: 767 });
   const [hotNews, setHotNews] = useState([])
   const [currentValue, setCurrentValue] = useState(1);
   const [foothball, setFoothball] = useState(false);
@@ -21,7 +23,6 @@ function HotNews(){
   const [prev, disablePrev] = useState(false);
   const [next, disableNext] =  useState(false);
   const [slideDirection, setSlideDirection] = useState(false)
-
   const setSportState = (sport) => {
     setFoothball(sport === 'foothball');
     setBaskethball(sport === 'baskethball');
@@ -173,7 +174,7 @@ function HotNews(){
         });
       setHotNews(response.data)
       } catch (error) {
-        console.log(error);  
+        // console.log(error);  
       }
     };
 
@@ -238,7 +239,7 @@ const renderNews = (newsArray, currentPage, sport)=>{
 }
 return <div className="hotnewsbackground" ref={swipeContentRef}   onTouchStart={handleTouchStart}
 onTouchEnd={handleTouchEnd}    data-sport={foothball ? "foothball" : baskethball ? "baskethball" : boxing ? "boxing" : tennis ? "tennis" : cricket  ? "cricket" : womensfoothball ? "womensfoothball" : ""}>
-<h2 className="hotnews-up">!HotNews</h2>
+<h2 className="hotnews-up">HotNews</h2>
 <div className="hot-news-title" >
 <h4 onClick={() => {setSportState("foothball"); setCurrentValue(1);}}>Foothball</h4>
 <h4 onClick={() => {setSportState("baskethball"); setCurrentValue(1);}}>Baskethball</h4>

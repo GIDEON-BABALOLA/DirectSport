@@ -1,12 +1,13 @@
 import "../Styles/OTP.css"
 import React, { useState, useRef, useEffect } from 'react';
-const OTP = () => {
+const RESET = () => {
   const OTPinputs = useRef([]);
   const [otpValues, setOtpValues] = useState(['', '', '', '']);
   const [buttonActive, setButtonActive] = useState(false);
   useEffect(() => {
     OTPinputs.current[0].focus();
   }, []);
+  
 
   const handleInputChange = (index, value) => {
     const newOtpValues = [...otpValues];
@@ -109,4 +110,4 @@ const OTP = () => {
   );
 };
 
-export default OTP;
+export default RESET;

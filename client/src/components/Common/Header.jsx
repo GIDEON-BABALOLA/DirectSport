@@ -25,7 +25,7 @@ return <div>
     
     <div className={`navbar-toggler ${menu ? "clicked": ""}`} 
     onClick={menuSelector}  data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-<Hamburger toggled={isOpen} toggle={setOpen} />
+c
 </div>
     <div className={`collapse navbar-collapse ${menu ? "show" : ""}`} id="navbarNav">
 <ul className="header-list">

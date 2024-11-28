@@ -53,7 +53,7 @@ const CompetitionSlider = () => {
       <header>
         <h1 className='compman'>#Competitions Covered</h1>
       </header>
-      <div className='tag-list'    onMouseEnter={enter}
+      <div className='tag-list' onMouseEnter={enter}
       onMouseLeave={leave}
     >
         {[...new Array(ROWS)].map((_, i) => (
@@ -69,4 +69,4 @@ const CompetitionSlider = () => {
   );
 };
 
-export default CompetitionSlider;
+export default CompetitionSlider
