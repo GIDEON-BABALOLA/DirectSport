@@ -9,7 +9,7 @@ function Home() {
     const [heroes, setHeroes] = useState([]);
     useEffect(() => {
       const getImages = async () => {
-        const secret = 'http://localhost:3500/competitionLogo/';
+        const secret = 'https://directsport.onrender.com/competitionLogo/';
         try {
           const response = await axios.get(secret,
             {
