@@ -163,7 +163,7 @@ function HotNews(){
   useEffect(() => {
     setSportState("foothball")
     const getImages = async () => {
-      const url = 'https://directsport.onrender.com/';
+      const url = 'https://directsport.onrender.com/hotNews/';
       try {
         const response = await axios.get(url,
           {
