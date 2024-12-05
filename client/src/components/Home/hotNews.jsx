@@ -161,7 +161,7 @@ function HotNews(){
     }
   };
   useEffect(() => {
-    setSportState("foothball")
+    setSportState("foothball");
     const getImages = async () => {
       const url = 'https://directsport.onrender.com/hotNews/';
       try {
