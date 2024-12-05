@@ -5,7 +5,6 @@ const logEvents = require(path.join(__dirname, "..", "middleware", "logEvents.js
 const hotNewsModel = require(path.join(__dirname, "..", "model", "hotNews.js"))
 const postHotNews =  async (req, res) => {
     const {competitionName, image, author, title, content, likes} = req.body
-    console.log(req.body)
     const newHotNews = {
         id : uuid.v4(), 
         competitionName : competitionName.toLowerCase(),
