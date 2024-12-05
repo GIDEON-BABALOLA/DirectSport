@@ -19,7 +19,8 @@ const qrCodeSignUp = require(path.join(__dirname, "routes", "qrCode.js"))
 app.use(express.urlencoded( {extended : true}));
 app.use(express.json());
 app.use(cors(corsOptions));
-app.use(frontendBackend) // API Key connecting frontend and backend
+// app.use(frontendBackend) 
+// API Key connecting frontend and backend
 app.use(authLogin);
 app.use(authRegister);
 app.use(requestLogs);

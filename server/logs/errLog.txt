@@ -992,3 +992,12 @@
 2024 04 20	16:09:29	b3b30d2d-bb5c-49fd-ab03-0a70f7890781	Error : Not allowed by CORS
 2024 04 20	16:09:29	620659f1-5f74-47d4-8698-48e9e5ffdae9	Error : Not allowed by CORS
 2024 04 20	16:09:29	e63ac4a6-208c-4d5d-9e73-b09f26b651b2	Error : Not allowed by CORS
+2024 12 04	22:40:25	6fac780d-706e-41fc-8ece-4154a90816b3	Error : getaddrinfo ENOTFOUND api.cloudinary.com
+2024 12 04	22:40:25	6ab302f5-a96b-48c9-be8f-5a3258d1290c	Error : getaddrinfo ENOTFOUND api.cloudinary.com
+2024 12 05	10:38:25	11a9174d-fb26-415f-9bd6-455e4ed4c38e	Error : getaddrinfo ENOTFOUND api.cloudinary.com
+2024 12 05	10:38:37	e9d265cd-637d-4b06-bb67-1e4319c6427b	Error : getaddrinfo ENOTFOUND api.cloudinary.com
+2024 12 05	10:39:27	85a8b398-6d35-4188-8434-542544f000e5	Error : getaddrinfo ENOTFOUND api.cloudinary.com
+2024 12 05	10:41:07	ec70c048-2de5-485e-90b2-b3b401856f32	Error : connect ETIMEDOUT 44.198.107.194:443
+2024 12 05	10:42:56	d00dd5d4-49fe-4066-b324-8c185ce241e4	Error : getaddrinfo ENOTFOUND api.cloudinary.com
+2024 12 05	10:43:09	227bf2fa-6158-4cc6-9274-38e30541ab34	Error : getaddrinfo ENOTFOUND api.cloudinary.com
+2024 12 05	10:46:33	df8ef6d7-7c96-46eb-8cae-56f3840013d6	Error : getaddrinfo ENOTFOUND api.cloudinary.com
